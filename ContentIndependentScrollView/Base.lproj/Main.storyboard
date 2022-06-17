@@ -22,11 +22,11 @@
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5I3-5L-qjo">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNF-ml-WzU" userLabel="ContentContainer">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yNF-ml-WzU" userLabel="ContentsContainer">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="737"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AC4" translatesAutoresizingMaskIntoConstraints="NO" id="lWL-5X-vvY">
-                                                        <rect key="frame" x="79" y="240" width="256" height="256"/>
+                                                        <rect key="frame" x="79" y="240.66666666666663" width="256" height="256"/>
                                                         <constraints>
                                                             <constraint firstAttribute="width" secondItem="lWL-5X-vvY" secondAttribute="height" multiplier="1:1" id="mwj-GF-8Mr"/>
                                                             <constraint firstAttribute="width" constant="256" id="vLx-3y-3gt"/>
@@ -45,15 +45,14 @@
                                             <constraint firstItem="yNF-ml-WzU" firstAttribute="leading" secondItem="5I3-5L-qjo" secondAttribute="leading" id="J6A-MW-Eut"/>
                                             <constraint firstItem="yNF-ml-WzU" firstAttribute="top" secondItem="5I3-5L-qjo" secondAttribute="top" id="jOl-qu-YPz"/>
                                             <constraint firstAttribute="bottom" secondItem="yNF-ml-WzU" secondAttribute="bottom" id="k8v-o1-aHP"/>
-                                            <constraint firstAttribute="width" secondItem="yNF-ml-WzU" secondAttribute="width" id="l6I-QP-EwC"/>
                                         </constraints>
                                     </scrollView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="5I3-5L-qjo" firstAttribute="leading" secondItem="HfD-Jf-0eI" secondAttribute="leading" id="4wj-Wc-Uzt"/>
+                                    <constraint firstItem="yNF-ml-WzU" firstAttribute="height" secondItem="HfD-Jf-0eI" secondAttribute="height" priority="750" constant="1" id="7hT-32-yXO"/>
                                     <constraint firstAttribute="bottom" secondItem="5I3-5L-qjo" secondAttribute="bottom" id="dYW-UZ-Pdr"/>
-                                    <constraint firstItem="yNF-ml-WzU" firstAttribute="height" secondItem="HfD-Jf-0eI" secondAttribute="height" id="rnZ-x6-yLj"/>
                                     <constraint firstAttribute="trailing" secondItem="5I3-5L-qjo" secondAttribute="trailing" id="vM9-aR-ELZ"/>
                                     <constraint firstItem="5I3-5L-qjo" firstAttribute="top" secondItem="HfD-Jf-0eI" secondAttribute="top" id="zFO-QR-qgM"/>
                                 </constraints>
@@ -62,10 +61,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="HfD-Jf-0eI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="0JS-uE-lgm"/>
+                            <constraint firstItem="yNF-ml-WzU" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="A9e-AI-Xl5"/>
                             <constraint firstItem="HfD-Jf-0eI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="DIA-oG-AV4"/>
                             <constraint firstItem="HfD-Jf-0eI" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ofx-hB-MvH"/>
                             <constraint firstItem="HfD-Jf-0eI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="gep-iU-xFV"/>
-                            <constraint firstItem="HfD-Jf-0eI" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="oKm-YJ-O2R"/>
                             <constraint firstItem="HfD-Jf-0eI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="rlj-7Z-UOt"/>
                         </constraints>
                     </view>
