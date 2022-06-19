@@ -11,3 +11,9 @@ Storyboard view hierarchy
             ScrollView - 0 for top, bottom, leading, trailing
             
                 ContentContainer - - 0 for top, bottom, leading, trailing; height = contentView height + 1, high priority; width = device view width
+
+
+
+
+
+# This is just a way of many ways to build a Content Independent scroll view
